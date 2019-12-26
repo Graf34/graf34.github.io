@@ -34,32 +34,35 @@ function getNum(num) {
 
 function getOp(op) {
 
-    if (!isNaN(parseFloat(a)) && (x = " ")) {
+
+    if (!isNaN(parseFloat(a)) && (x == " ")) {
         x = op;
         primer.innerText = a + op;
         otvet.innerText = "";
-    }
-
-    if (a == "" && op == "-") {
-        a += "-";
-        otvet.innerText = a;
     } else {
-        if (a == "+" && op == "-") {
-            a = "-";
+        if (a == "" && op == "-") {
+            a += "-";
             otvet.innerText = a;
+        } else {
+            if (a == "-" && op == "+") {
+                a = "";
+                otvet.innerText = a;
+            }
+        }
+
+        if (b == "" && op == "-") {
+            b += "-";
+            otvet.innerText = b;
+        } else {
+            if (b == "-" && op == "+") {
+                b = "";
+                otvet.innerText = b;
+            }
         }
     }
 
-    if (a == "" && op == "+") {
-        a += "+";
-        otvet.innerText = a;
-    } else {
-        if (a == "-" && op == "+") {
-            a = "";
-            otvet.innerText = a;
-        }
-    }
 
+    //  console.log("X:" + x + ";" + "A:" + a + ";" + "B:" + b);
 }
 
 
