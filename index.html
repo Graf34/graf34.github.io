@@ -1,81 +1,56 @@
-<html>
-    <head>
-    <link href="css/stylev.css" rel="stylesheet">
-    </head>
-<body>
 
-    <div class="cf">
+<!-- saved from url=(0015)http://present/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="http://present/images/favicon.ico">
+    <title>Главная</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta>
+    <link href="./index_files/style.css" rel="stylesheet">
+    </head><body onload="document.getElementById(&#39;basket&#39;).textContent=localStorage.length;"><div class="header">
+        <a href="http://present/"><img src="./index_files/logo.png" class="logo"></a>
 
-    <div class="otvb">
-        <p class="primer" id="primer"></p>
-        <p class="otvet" id="otvet"></p>
-    </div>
-
-    <div class="c" onclick="location.reload()">
-        <p class="cp">C</p>
-    </div>
-    <div class="right" onclick="getOp('/')">
-        <p class="cp">/</p>
-    </div>
-
-
-
-    <div class="left" onclick="getNum(7)">
-        <p class="cp">7</p>
-    </div>
-    <div class="left" onclick="getNum(8)">
-        <p class="cp">8</p>
-    </div>
-    <div class="left" onclick="getNum(9)">
-        <p class="cp">9</p>
-    </div>
-    <div class="right" onclick="getOp('*')">
-        <p class="cp">X</p>
-    </div>
-
-
-    <div class="left" onclick="getNum(4)">
-        <p class="cp">4</p>
-    </div>
-    <div class="left" onclick="getNum(5)">
-        <p class="cp">5</p>
-    </div>
-    <div class="left" onclick="getNum(6)">
-        <p class="cp">6</p>
-    </div>
-    <div class="right" onclick="getOp('-')">
-        <p class="cp">-</p>
-    </div>
-
-
-    <div class="left" onclick="getNum(1)">
-        <p class="cp">1</p>
-    </div>
-    <div class="left" onclick="getNum(2)">
-        <p class="cp">2</p>
-    </div>
-    <div class="left" onclick="getNum(3)">
-        <p class="cp">3</p>
-    </div>
-    <div class="right" onclick="getOp('+')">
-        <p class="cp">+</p>
+        <div class="searchbr">
+            <form action="http://present/index.php" method="POST" id="psk">
+                <input type="text" class="search" placeholder="Поиск" name="poisk" value="">
+                <input type="submit" value="" class="searchsubmit" style="background-image: url(&#39;images/srcbutton.png&#39;);">
+                <!--</form>-->
+        </form></div>
+        <img src="./index_files/gorod.png" class="gorodmark">
+        <h3 class="gorod"> Москва</h3>
+        <img src="./index_files/korz.png" class="korzina">
+        <h3 class="gorod" id="basket">3</h3>
     </div>
 
 
 
+    <div class="content">
+                <div class="filter">
+                        <!--<form class="infprice" id='searchid' action="index.php" method="POST">-->
+            <div class="infprice">
+                <h3> Цена от <input value="" name="min" type="number" class="fprice" onchange="document.getElementById(&quot;searchid&quot;).submit();document.getElementById(&quot;psk&quot;).submit();">до<input type="number" value="" name="max" class="fprice" onchange="document.getElementById(&quot;searchid&quot;).submit();document.getElementById(&quot;psk&quot;).submit();"> Тип товара
+                    <select name="type">
 
-    <div class="zero" onclick="getNum(0)">
-        <p class="cp">0</p>
-    </div>
-    <div class="left" onclick="getDot()">
-        <p class="cp">.</p>
-    </div>
-    <div class="r"onclick="rovno();">
-        <p class="cp">=</p>
-    </div>
+                        <option selected="" value="0">Все</option>
+                        <option value="&#39;suvenir&#39;">Сувениры</option>
+                        <option value="&#39;present&#39;">Подарки</option>
+
+                    </select>
+                    <input type="submit" value="Применить" class="filtersubmit">
+                </h3>
+            </div>
+            
+        </div>
+
+        <br>
 
 
-</div>
-<script src="script.js"></script>
-</body>
-</html>
+        <div class="tovar"><a href="http://present/tovar.php/?id=1"> <img id="1" src="./index_files/tovarphoto1.png" class="tovarphoto"></a><h3 class="towarname">Тестовый подарок</h3><h3 class="towarprice">1200</h3><p class="opisanie">Задача организации, в особенности же дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание систем массового участия.</p></div><div class="tovar"><a href="http://present/tovar.php/?id=2"> <img id="2" src="./index_files/tovarphoto4.png" class="tovarphoto"></a><h3 class="towarname">Тестовый сувенир</h3><h3 class="towarprice">1100</h3><p class="opisanie">Задача организации, в особенности же дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание систем массового участия.</p></div><div class="tovar"><a href="http://present/tovar.php/?id=3"> <img id="3" src="./index_files/tovarphoto5.png" class="tovarphoto"></a><h3 class="towarname">Тестовый подарок</h3><h3 class="towarprice">1500</h3><p class="opisanie">Задача организации, в особенности же дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание систем массового участия.</p></div><div class="tovar"><a href="http://present/tovar.php/?id=4"> <img id="4" src="./index_files/tovarphoto2.png" class="tovarphoto"></a><h3 class="towarname">Тестовый сувенир</h3><h3 class="towarprice">1300</h3><p class="opisanie">Задача организации, в особенности же дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание систем массового участия.</p></div><div class="tovar"><a href="http://present/tovar.php/?id=5"> <img id="5" src="./index_files/tovarphoto7.png" class="tovarphoto"></a><h3 class="towarname">Тестовый подарок</h3><h3 class="towarprice">1200</h3><p class="opisanie">Задача организации, в особенности же дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание систем массового участия.</p></div><div class="tovar"><a href="http://present/tovar.php/?id=6"> <img id="6" src="./index_files/tovarphoto6.png" class="tovarphoto"></a><h3 class="towarname">Тестовый сувенир</h3><h3 class="towarprice">1100</h3><p class="opisanie">Задача организации, в особенности же дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание систем массового участия.</p></div><div class="tovar"><a href="http://present/tovar.php/?id=7"> <img id="7" src="./index_files/tovarphoto3.png" class="tovarphoto"></a><h3 class="towarname">Тестовый подарок</h3><h3 class="towarprice">1500</h3><p class="opisanie">Задача организации, в особенности же дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание систем массового участия.</p></div><div class="tovar"><a href="http://present/tovar.php/?id=8"> <img id="8" src="./index_files/tovarphoto8.png" class="tovarphoto"></a><h3 class="towarname">Тестовый сувенир</h3><h3 class="towarprice">1300</h3><p class="opisanie">Задача организации, в особенности же дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание систем массового участия.</p></div><div class="tovar"><a href="http://present/tovar.php/?id=9"> <img id="9" src="./index_files/tovarphoto9.png" class="tovarphoto"></a><h3 class="towarname">Тестовый сувенир</h3><h3 class="towarprice">1300</h3><p class="opisanie">Задача организации, в особенности же дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание систем массового участия.</p></div>
+
+
+
+    </div>
+    <script src="./index_files/script.js.Без названия"></script>
+
+
+</body></html>

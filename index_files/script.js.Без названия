@@ -1,0 +1,4 @@
+
+function addToBasket($id){
+    localStorage.setItem('Покупка', $id);
+}
