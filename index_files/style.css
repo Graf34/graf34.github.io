@@ -1,552 +1,197 @@
 * {
-    /*box-sizing;
-    border box;*/
     margin: 0;
-}
-
-.logo {
-    width: 12.5%;
-    margin-left: 3%;
-    margin-right: 13%;
-    margin-top: 0.3%;
-    margin-bottom: 0.5%;
-    float: left;
-}
-
-.header {
-    background-color: white;
-    padding-bottom: 4.8%;
 }
 
 body {
-    background-color: #9976ef;
+    background: linear-gradient(0deg, #eff2f7, #6b97ed);
+    /**/
+    ;
 }
 
-.search {
-    font-size: 18px;
-    outline: none;
-    /* Убираем свечение в Chrome и Safari */
-    width: 80%;
-    height: 38px;
-    border: none;
-    /* Убираем рамку */
+#navbar ul {
+    display: none;
+    background-color: #f90;
+    position: absolute;
+    top: 100%;
 }
 
-.lefth {
-    width: 70%;
+#navbar li:hover ul {
+    display: block;
+}
+
+#navbar,
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#navbar {
+    height: 76px;
+    background-color: #fff;
+    padding-left: 40px;
+    min-width: 470px;
+}
+
+#navbar li {
     float: left;
+    position: relative;
+    height: 100%;
 }
 
-.gorod {
-    color: #9976ef;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 5%;
+#navbar li a {
+    margin-top: 4%;
+    font-size: 28px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 6px;
+    display: block;
+    width: 300px;
+    color: #20639b;
+    text-decoration: none;
+    text-align: center;
+}
+
+#navbar ul li {
+    float: none;
+}
+
+#navbar li:hover {
+    background-color: #98cdfa;
+}
+
+#navbar ul li:hover {
+    background-color: #666;
+}
+
+img {
     float: left;
-    font-size: 26px;
-    margin-top: 1.6%;
-    margin-left: 1%;
-}
-
-.gorodmark {
-    margin-top: 1.6%;
-    margin-left: 5%;
-    float: left;
-}
-
-.searchbr {
-    margin-top: 1.4%;
-    float: left;
-    width: 40%;
-    height: 38px;
-    border: 1.3px solid black;
-    border-radius: 10px;
-    padding-left: 1%;
-}
-
-.searchsubmit {
-    margin-top: 2px;
-    float: right;
-    width: 32px;
-    /* Ширина кнопки */
-    height: 32px;
-    /* Высота кнопки */
-    border: none;
-    /* Убираем рамку */
-    border-radius: 10px;
-    outline: none;
 }
 
 .content {
-    margin-left: 23%;
-    width: 50%;
     margin-top: 3%;
-    padding-bottom: 4.8%;
-}
-
-.tovar {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    margin-right: 3%;
-    border-radius: 10px;
-    width: 30%;
-    float: left;
-    padding-bottom: 2%;
+    border-radius: 20px;
+    margin-left: 10%;
+    padding-bottom: 19%;
     background-color: white;
-    margin-bottom: 2%;
+    width: 80%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    margin-bottom: 5%;
 }
 
-.tovarphoto {
-    margin-top: 4%;
-    margin-left: 4%;
-    margin-right: 4%;
-    width: 92%;
-}
-
-.towarname {
+.content-form {
     float: left;
-    margin-top: 3%;
-    margin-left: 3%;
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-top: 2%;
+    background-color: white;
+    width: 35%;
+    padding-bottom: 10%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.towarprice {
-    float: right;
-    margin-top: 3%;
-    margin-right: 3%;
+.logo {
+    float: left;
 }
 
-h3 {
-    font-family: Arial, Helvetica, sans-serif;
+.rek {
+    width: 100%;
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #20639b;
+    padding: 2%;
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.opisanie {
-    margin-top: 15%;
-    margin-left: 4%;
-    margin-right: 4%;
-    width: 94%;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.filter {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    margin-right: 3%;
-    border-radius: 10px;
-    width: 96%;
+    margin-left: 10%;
     float: left;
-    padding-bottom: 2%;
-    background-color: white;
-    margin-bottom: 3%;
-}
-
-.fprice {
-    border: 1.3px solid black;
-    border-radius: 10px;
-    width: 10%;
-    height: 26px;
-    margin-left: 2.5%;
-    margin-right: 3%;
-}
-
-.infprice {
-    margin-left: 6%;
-    margin-top: 3%;
-    margin-bottom: 0.8%;
-}
-
-select {
-    border: 1.3px solid black;
-    border-radius: 10px;
-    height: 26px;
-    margin-left: 2.5%;
-    width: 15%;
-    margin-right: 4%;
-}
-
-.filtersubmit {
-    font-size: 16px;
-    outline: none;
-    /* Убираем свечение в Chrome и Safari */
-    width: 14%;
-    height: 26px;
-    border: 1.3px solid black;
-    border-radius: 10px;
-    background-color: white;
-}
-
-.mp {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.korzina {
-    float: left;
-    width: 1.7%;
-    margin-top: 1.6%;
-    margin-left: 2%;
-}
-
-.tovarbg {
-    margin-top: 5%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    margin-right: 3%;
-    border-radius: 10px;
-    width: 96%;
-    float: left;
-    padding-bottom: 2%;
-    background-color: white;
-    margin-bottom: 3%;
-}
-
-.pagephoto {
-    margin-top: 4%;
-    margin-left: 4%;
-    margin-right: 2%;
-    width: 65%;
-    float: left;
-}
-
-.photocontent {
-    margin-left: 20%;
-    width: 60%;
-}
-
-.towarnamepage {
-    float: left;
-    margin-top: 3%;
+    width: 45%;
     font-size: 21px;
 }
 
-.towarpricepage {
+.kvr {
+    margin-right: 10%;
     float: right;
-    margin-top: 3%;
-    margin-right: 3%;
+    width: 30%;
+    padding-bottom: 20%;
 }
 
-.opisaniepage {
-    margin-top: 6%;
-    margin-left: 4%;
-    margin-right: 4%;
-    width: 94%;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#red {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border: 1.3px solid black;
-    background: #ff3d3d;
-    float: left;
-    margin-right: 15px;
-    width: 65px;
-    height: 65px;
-}
-
-#blue {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border: 1.3px solid black;
-    background: #6b3dff;
-    margin-right: 15px;
-    float: left;
-    width: 65px;
-    height: 65px;
-}
-
-#green {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border: 1.3px solid black;
-    background: #3dfea1;
-    float: left;
-    width: 65px;
-    height: 65px;
-}
-
-.order {
-    margin-top: 1.4%;
-    font-size: 28px;
-    outline: none;
-    /* Убираем свечение в Chrome и Safari */
-    width: 25%;
-    height: 50px;
-    border: 1.3px solid black;
-    border-radius: 10px;
-    background-color: white;
-}
-
-.pt {
-    font-family: Arial, Helvetica, sans-serif;
+.content_1 {
+    border-radius: 20px;
+    margin-left: 10%;
     margin-top: 2%;
-    margin-left: 5%;
-    margin-bottom: 2%;
+    background-color: white;
+    width: 80%;
+    padding-bottom: 25%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.content_0 {
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-top: 6%;
+    background-color: white;
+    width: 80%;
+    padding-bottom: 1%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    margin-bottom: 3%;
+}
+
+span {
+    font-size: 21px;
+}
+
+.new {
+    padding: 2%;
+    padding-bottom: 0.4%;
+}
+
+.sales {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1%;
+    padding-bottom: 15%;
+}
+
+.card_gl {
+    float: left;
+    width: 12%;
+    border-radius: 20px;
+    margin-left: 0.5%;
+    margin-top: 1%;
+    background-color: white;
+    padding-bottom: 1%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.photo_gl {
+    padding-right: 25%;
+    padding-left: 20%;
+    padding-top: 20%;
+}
+
+.card_gl h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.card_gl h1 {
+    width: 100%;
+    text-align: center;
+    color: red;
+    font-size: 60px;
 }
 
 footer {
+    font-size: 31;
     background-color: white;
-    clear: both;
-    position: relative;
-    height: 50px;
-    margin-top: -200px;
+    height: 120px;
+    margin-top: 160px;
 }
 
-.all {
-    margin-left: 3%;
-    float: left;
-    width: 25px;
-    height: 25px;
+footer h2 {
+    color: #20639b;
+    padding-left: 3%;
 }
-
-
-/*.btitle {
-    margin-left: %;
-    float: left;
-}*/
-
-hr {
-    float: left;
-    margin-left: 0.4%;
-}
-
-.basketcellbg {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    margin-right: 3%;
-    border-radius: 10px;
-    width: 96%;
-    float: left;
-    padding-bottom: 1%;
-    background-color: white;
-}
-
-
-/*************************************************/
-
-
-/* стилизация содержимого страницы */
-
-
-/* свойства модального окна по умолчанию */
-
-.modal {
-    position: fixed;
-    /* фиксированное положение */
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.5);
-    /* цвет фона */
-    z-index: 1050;
-    opacity: 0;
-    /* по умолчанию модальное окно прозрачно */
-    -webkit-transition: opacity 200ms ease-in;
-    -moz-transition: opacity 200ms ease-in;
-    transition: opacity 200ms ease-in;
-    /* анимация перехода */
-    pointer-events: none;
-    /* элемент невидим для событий мыши */
-    margin: 0;
-    padding: 0;
-}
-
-
-/* при отображении модального окно */
-
-.modal:target {
-    opacity: 1;
-    /* делаем окно видимым */
-    pointer-events: auto;
-    /* элемент видим для событий мыши */
-    overflow-y: auto;
-    /* добавляем прокрутку по y, когда элемент не помещается на страницу */
-}
-
-
-/* ширина модального окна и его отступы от экрана */
-
-.modal-dialog {
-    position: relative;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 1%;
-}
-
-
-/*
-@media (min-width: 576px) {
-    .modal-dialog {
-        max-width: 500px;
-        margin: 30px auto;
-        
-    }
-}
-
-*/
-
-
-/* свойства для блока, содержащего контент модального окна */
-
-.modal-content {
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    background-color: #fff;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, .2);
-    border-radius: .3rem;
-    outline: 0;
-}
-
-@media (min-width: 768px) {
-    .modal-content {
-        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
-    }
-}
-
-
-/* свойства для заголовка модального окна */
-
-.modal-header {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: 15px;
-    border-bottom: 1px solid #eceeef;
-}
-
-.modal-title {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 1.5;
-    font-size: 1.25rem;
-    font-weight: 500;
-}
-
-
-/* свойства для кнопки "Закрыть" */
-
-.close {
-    float: right;
-    font-family: sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1;
-    color: #000;
-    text-shadow: 0 1px 0 #fff;
-    opacity: .5;
-    text-decoration: none;
-}
-
-
-/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
-
-.close:focus,
-.close:hover {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-    opacity: .75;
-}
-
-
-/* свойства для блока, содержащего основное содержимое окна */
-
-.modal-body {
-    position: relative;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding: 15px;
-    overflow: auto;
-}
-
-.modalphoto {
-    width: 100%;
-}
-
-.cbb {
-    width: 19px;
-    height: 19px;
-    float: left;
-    margin-left: 1.2%;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 1%;
-}
-
-table {
-    float: right;
-    width: 90%;
-    margin-left: 1.2%;
-}
-
-td {
-    text-align: center;
-    width: 25%;
-}
-
-.textb {
-    width: 55%;
-    float: left;
-    text-align: center;
-}
-
-.photocontentb {
-    margin-left: 25%;
-    width: 50%;
-}
-
-h4 {
-    float: left;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 9%;
-    margin-top: 1%;
-}
-
-.btn {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    margin-right: 3%;
-    border-radius: 10px;
-    float: right;
-    padding-bottom: 0.4%;
-    background-color: white;
-    margin-bottom: 3%;
-    width: 15%;
-}
-
-.rel {
-    width: 15%;
-    float: left;
-}
-
-.tovarbgb {
-    margin-top: 5%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    margin-right: 3%;
-    border-radius: 10px;
-    width: 96%;
-    padding-bottom: 1%;
-    float: left;
-    background-color: white;
-    margin-bottom: 3%;
-}
-
-
-/*--------------------*/
