@@ -1,0 +1,111 @@
+body {
+    background: radial-gradient(#587baf, #2a457e);
+}
+.otvb{
+    background-color: white;
+    width: 401px;
+    height: 100px;
+    border-radius: 20px 20px 00px 0px;
+}
+
+p{
+    text-align: right;
+    margin-right: 3%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.primer{
+    color: rgb(107, 107, 107);
+    padding-top: 12px;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.otvet{
+    font-size: 50px;
+    margin-top: 0;
+}
+
+.c{
+    margin-top: 3px;
+    background-color: lightskyblue;
+    width: 300px;
+    height: 100px;
+    float: left;
+    margin-right: 3px;
+}
+.cp{
+    text-align: center;
+    font-family: monospace;
+    font-size: 32px;
+    
+}
+
+
+
+.left{
+    margin-top: 3px;
+    background-color: lightskyblue;
+    margin-right: 3px;
+    width: 98px;
+    height: 100px;
+    float: left;
+}
+
+
+
+
+.right{
+    margin-top: 3px;
+    background-color: tomato;
+    
+    width: 98px;
+    height: 100px;
+    float: left;
+}
+
+.zero{
+    margin-top: 3px;
+    background-color: lightskyblue;
+    margin-right: 3px;
+    width: 199px;
+    height: 100px;
+    float: left;
+    border-radius: 0px 0px 0px 20px;
+}
+
+.r{
+    margin-top: 3px;
+    background-color: tomato;
+    border-radius: 0px 0px 20px 0px;
+    width: 98px;
+    height: 100px;
+    float: left;
+}
+
+
+
+.cf{
+    width: 404px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+
+.zero:hover,.left:hover,.c:hover{
+    background-color: rgb(175, 218, 245);
+}
+.r:hover,.right:hover{
+    background-color: rgb(252, 138, 118);
+}
+
+.zero:active,.left:active,.right:active,.c:active,.r:active{
+    background-color: royalblue;
+}
+
+p::selection {
+    background: transparent;
+ }
+ p::-moz-selection {
+    background: transparent;
+ }
