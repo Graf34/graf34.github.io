@@ -9,7 +9,7 @@ body{
 
 header{
     border-radius: 5px 5px 0px 0px ;
-    margin-top: 2%;
+    /*margin-top: 2%;*/
     background-color: rgb(240, 242, 245);
 }
 
@@ -35,7 +35,7 @@ header h2{
     margin-right: auto;
     width: 795px;
     
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    /*box-shadow: 0 0 10px rgba(0,0,0,0.5);*/
 }
 
 .editor{
