@@ -1,4 +1,24 @@
-body{
+html {
+    width: 795px;
+    height: 100%;
+}
+
+body {
     background: url("/bg.png") no-repeat;
-    background-size: 100%;
+    background-size: 200%;
+    height: 100%;
+}
+
+.col-4.m-2 h4{
+    font-size: 18px;
+}
+
+.col-5.m-2 i {
+    font-size: 30px;
+}
+
+.fa-user-tie {
+    margin-left: 60px;
+    font-size: 150px;
+    vertical-align: -300px;
 }
